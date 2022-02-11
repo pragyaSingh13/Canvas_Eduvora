@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/redbtn"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:text=""
+    android:background="#001DAE"
+    android:layout_margin="5dp"
+    style="?android:attr/buttonBarButtonStyle" />

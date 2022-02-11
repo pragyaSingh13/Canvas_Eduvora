@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/cardv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F1EFEE"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingVertical="5dp"
+        >
+
+        <ToggleButton
+            android:id="@+id/btn1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pencil_bg"
+            android:padding="10dp"
+            android:textOff=""
+            android:textOn=""
+            android:onClick="checkBtnClick"/>
+
+        <ToggleButton
+            android:id="@+id/bt2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:onClick="checkBtnClick"
+            android:background="@drawable/arrow_bg"
+            android:paddingRight="20dp"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/bt3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/square_bg"
+            android:padding="2dp"
+            android:onClick="checkBtnClick"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/btn4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:onClick="checkBtnClick"
+            android:background="@drawable/circle_bg"
+            android:padding="2dp"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/btn5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/palette_bg"
+            android:padding="2dp"
+            android:textOff=""
+            android:textOn="" />
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.example.canvaseduvora.DrawPath
+        android:id="@+id/canvas"
+        app:layout_constraintTop_toBottomOf="@id/cardv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="650dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
